@@ -1,0 +1,21 @@
+##################### Elasticsearch Configuration #####################
+# Cluster name identifies your cluster for auto-discovery. If you're running
+# multiple clusters on the same network, make sure you're using unique names.
+cluster.name: {ELASTICSEARCH_CLUSTER}
+# Node names are generated dynamically on startup, so you're relieved
+# from configuring them manually. You can tie this node to a specific name:
+node.name: {ELASTICSEARCH_NODE}
+# Set the bind address specifically (IPv4 or IPv6):
+network.host: {ELASTICSEARCH_HOST}
+# Set a custom port to listen for HTTP traffic (9200 by default):
+http.port: {ELASTICSEARCH_PORT}
+# Set a custom port for the node to node communication (9300 by default):
+#transport.tcp.port: 9300
+# Path to directory where to store index data allocated for this node.
+path.data: {ELASTICSEARCH_DATA_DIR}
+# Path to log files:
+path.logs: {ELASTICSEARCH_LOG_DIR}
+
+########################################################################
+# Note: More settings and detailed explanation please refer to out of box elasticsearch.yml.
+########################################################################
